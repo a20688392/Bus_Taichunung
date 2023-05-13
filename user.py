@@ -37,11 +37,11 @@ class user:
         return result
     
     @staticmethod
-    def getUserData(name):
+    def getUserData(account):
         conn = sqlite3.connect('user.sqlite')
         cursor = conn.cursor()
-        sql = "select * from user where (name = ?)"
-        values = [name]
+        sql = "select * from user where (account = ?)"
+        values = [account]
         cursor.execute(sql, values)
         result = cursor.fetchone()
         conn.commit()

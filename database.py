@@ -36,10 +36,10 @@ conn.execute('''
     );
 ''')
 conn.execute("insert into user (name, account, password, phoneNumber, email)\
-            values('Jone','s1091881', 'password', '0912-345-678' , 'Jone@gmail.com')")
+            values('Jone','s1091881', '$2b$12$k/tLuYSd3aZTUkJX62A7YO0d3I.fiYdU6/gLCxUH2O0o/P2zmr0ZG', '0912-345-678' , 'Jone@gmail.com')")
 
 conn.execute("insert into user (name, account, password, phoneNumber, email)\
-            values('Andy','s1091915', 'password', '0912-678-901' , 'Andy@gmail.com')")
+            values('Andy','s1091915', '$2b$12$k/tLuYSd3aZTUkJX62A7YO0d3I.fiYdU6/gLCxUH2O0o/P2zmr0ZG', '0912-678-901' , 'Andy@gmail.com')")
 
 conn.execute("insert into user (name, account, password, phoneNumber, email)\
             values('UserMate1','s1101916', 'password', '0934-325-618' , 'UserMate1@gmail.com')")
