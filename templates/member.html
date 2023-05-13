@@ -1,0 +1,63 @@
+{% extends "top.html" %}
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="./static/css/element.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/member.css">
+{% endblock %}
+{% block title %} 會員 {% endblock %}
+{% block content %}
+    <div class="top"></div>
+    <p class="center fs-2 fw-bold bigtext change">帳號申請</p>
+    <div class="apply_form">
+        <div class="mb-3 row apply_info center">
+            <form class="form-control" action="/member" method="post">
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">姓名</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputName" name="name">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">帳號</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputAccount" name="account">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">密碼</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" name="password">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">再次確認密碼</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputAgainPassword" name="check_password">
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">電話</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPhone" placeholder="台灣電話，09開頭" name="phone">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">信箱</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="要有@信箱" name="email">
+                    </div>
+                </div>
+                <div class="btn-submit">
+                    <input id="sub" class="btn btn-primary btn-in" type="button" value="送出" />
+                    <!-- <button id="sub" class="btn btn-primary btn-in" type="submit" name="submit">送出</button> -->
+                    <input class="btn btn-light btn-in" type="reset" onclick="location.href='./member'" value="取消" />
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <ul class="acessok"></ul>
+<script src="./static/js/member.js"></script>
+{% endblock %}
+
+</html>

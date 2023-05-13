@@ -13,7 +13,8 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
             crossorigin="anonymous"
         ></script>
-        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="./static/js/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         {% block style %}
         <link rel="stylesheet" type="text/css" href="./static/css/w2.css" />
         <link
@@ -57,7 +58,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./member.html"
+                            <a class="nav-link" href="{{ url_for('member')}}"
                                 >會員申請</a
                             >
                         </li>

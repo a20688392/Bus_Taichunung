@@ -1,0 +1,38 @@
+.bigtext {
+    margin: 3rem;
+    margin-bottom: 0px !important;
+}
+
+.apply_form {
+    /* background-color: #ff6161; */
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 12vh;
+    padding-left: 12vh;
+}
+
+.apply_info {
+    padding: 20px;
+
+    /* height: 10vh; */
+    /* background-color: beige; */
+    /* display: flex; */
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-in {
+    margin: 10px;
+}
+
+@media screen and (max-width:880px) {
+    .apply_form {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+}
