@@ -1,3 +1,4 @@
+import os
 from flask_bcrypt import Bcrypt
 from hashlib import scrypt
 from flask import Flask, redirect, render_template, request, session, url_for
@@ -8,7 +9,7 @@ from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity
 jwt = JWTManager()
  
 app = Flask(__name__)
-
+app.secret_key = os.urandom(24)
 
 @app.route('/')
 def index():
@@ -18,8 +19,7 @@ def index():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    if request.method == 'POST':
-        print(request.form)
+    if request.method == 'POST': 
         name = request.form["name"]
         if user.check_duplicate_username(name):
             return render_template('register.html', check = False)
@@ -39,7 +39,7 @@ def login():
         account = request.form["account"]
         user_password = user.check(account)
         password = request.form["password"]
-        bcrypt = scrypt()
+        bcrypt = Bcrypt()
         check = bcrypt.check_password_hash(user_password[0], password)
         if check == True:
             access_token = create_access_token(identity=account)
