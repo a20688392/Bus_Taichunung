@@ -56,6 +56,10 @@ def getsession():
         return session['access_token']
     return "Not logged in!"
 
+@app.route('/aboutus')
+def aboutus():
+    return render_template('aboutus.html')
+
 if __name__ == '__main__':
     # 設定 JWT 密鑰
     app.config['JWT_SECRET_KEY'] = '12389!)!834913*&*&*&*'
