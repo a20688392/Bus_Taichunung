@@ -1,0 +1,32 @@
+{% extends "top.html" %}
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="./static/css/element.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/member.css">
+{% endblock %}
+{% block title %} 會員登入 {% endblock %}
+{% block content %}
+    <div class="top"></div>
+    <p class="center fs-2 fw-bold bigtext change">會員登入</p>
+    <div class="apply_form">
+        <div class="mb-3 row apply_info center">
+            <form class="form-control" action="/login" method="post">
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">帳號</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputAccount" name="account">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">密碼</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" name="password">
+                    </div>
+                </div>
+                <div class="btn-submit">
+                    <button id="sub" class="btn btn-primary btn-in" type="submit" name="submit">送出</button>
+                    <input class="btn btn-light btn-in" type="reset" onclick="location.href='/login'" value="取消" />
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
