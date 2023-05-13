@@ -4,23 +4,25 @@ import json
 
 class user:
     @staticmethod
-    def register(account, password):
+    def register(name, account, password, phoneNumber, email):
         conn = sqlite3.connect('user.sqlite')
-        sql = "insert into user (account, password) values(?, ?)"
-        values = [account, password]
+        sql = "insert into user (name, account, password, phoneNumber, email) values(?, ?,?,?,?)"
+        values = [name, account, password, phoneNumber, email]
         conn.execute(sql, values)
         result = conn.execute("select * from user ")
         conn.commit()
         return result
+    
     @staticmethod
-    def check_duplicate_username(account):
+    def check_duplicate_username(name):
         conn = sqlite3.connect('user.sqlite')
         cursor = conn.cursor()
-        sql = "SELECT EXISTS(SELECT 1 FROM user WHERE account = ?)"
-        values = [account]
+        sql = "SELECT EXISTS(SELECT 1 FROM user WHERE name = ?)"
+        values = [name]
         cursor.execute(sql, values)
         result = cursor.fetchone()[0]
         conn.commit()
+        print("success: " , result)
         return bool(result)
     
     @staticmethod

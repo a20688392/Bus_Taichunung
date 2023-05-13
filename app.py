@@ -19,14 +19,18 @@ def index():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        account = request.form["account"]
-        if user.check_duplicate_username(account):
+        print(request.form)
+        name = request.form["name"]
+        if user.check_duplicate_username(name):
             return render_template('register.html', check = False)
+        account = request.form["account"]
         password = request.form["password"]
+        phone = request.form["phone"]
+        email = request.form["email"]
         bcrypt = Bcrypt()
         hashed_password = bcrypt.generate_password_hash(password=password)
-        user.register(account, hashed_password)
-        return redirect(url_for('/'))
+        user.register(name,account, hashed_password,phone,email)
+        return redirect("/")
     return render_template('register.html')
 
 @app.route('/login', methods=['GET', 'POST'])
