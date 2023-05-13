@@ -3,7 +3,7 @@ from hashlib import scrypt
 from flask import Flask, redirect, render_template, request, session, url_for
 from user import user
 
-from flask_jwt_extended import JWTManager, create_access_token
+from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
  
 jwt = JWTManager()
  
@@ -12,6 +12,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    if 'access_token' in session:
+        return redirect(url_for('/getsession'))
     return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -40,6 +42,19 @@ def login():
             session['access_token'] = access_token
             return render_template('login.html')
     return render_template('login.html')
+
+@app.route('/checkjwt')
+@jwt_required
+def checkjwt():
+    name = get_jwt_identity()
+    userdata = user.getUserData(name);
+    return render_template('index.html' , userdata = userdata)
+
+@app.route('/getsession')
+def getsession():
+    if 'access_token' in session:
+        return session['access_token']
+    return "Not logged in!"
 
 if __name__ == '__main__':
     # 設定 JWT 密鑰
