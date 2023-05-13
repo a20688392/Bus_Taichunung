@@ -13,13 +13,15 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
             crossorigin="anonymous"
         ></script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        {% block style %}
         <link rel="stylesheet" type="text/css" href="./static/css/w2.css" />
         <link
             rel="stylesheet"
             type="text/css"
             href="./static/css/element.css"
         />
-        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        {% endblock %}
         <title>{% block title %} 這是首頁 {% endblock %}</title>
     </head>
     <body>
