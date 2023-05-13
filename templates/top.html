@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" type="text/css" href="./static/css/w2.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./static/css/element.css"
+        />
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <title>{% block title %} 這是首頁 {% endblock %}</title>
+    </head>
+    <body>
+        <div class="background-img"></div>
+        <nav
+            class="navbar navbar-expand-lg bg-dark navbar-dark nav-color sticky-top"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="{{ url_for('index')}}"
+                    >> 公車時刻表
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('index')}}"
+                                >路線</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <a class="nav-link" href="./QandA.html">Q&A</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./member.html"
+                                >會員申請</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html"
+                                >About Us</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {% block content %} 這是首頁 {% endblock %}
+
+        <div class="bottom center">
+            <p class="center">
+                本網站著作權屬於靜宜大學 資訊工程學學系。<br />
+                為前端網頁期末報告之練習網頁。
+            </p>
+        </div>
+    </body>
+</html>
