@@ -63,7 +63,7 @@ function li_items(items) {
         liCard.attr("title", "路線詳情");
         //連結
         var CardLink = $("<a>");
-        CardLink.attr("href", `bus-way.html?Zh_tw=${items[i].SubRoutes[0].SubRouteName.Zh_tw}&En=${items[i].SubRoutes[0].SubRouteName.En}`);
+        CardLink.attr("href", `busWay?Zh_tw=${items[i].SubRoutes[0].SubRouteName.Zh_tw}&En=${items[i].SubRoutes[0].SubRouteName.En}`);
         CardLink.addClass("busLink");
         //內容
         var CardText = $("<p>");

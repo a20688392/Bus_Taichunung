@@ -1,0 +1,117 @@
+@-webkit-keyframes breathe {
+    0% {
+        width: 93.6px;
+        height: 93.6px;
+        top: 13.2px;
+        left: 37.6px;
+    }
+
+    25% {
+        width: 91.8px;
+        height: 91.8px;
+        top: 14.1px;
+        left: 38.8px;
+    }
+
+    50% {
+        width: 90px;
+        height: 90px;
+        top: 15px;
+        left: 40px;
+    }
+
+    75% {
+        width: 91.8px;
+        height: 91.8px;
+        top: 14.1px;
+        left: 38.8px;
+    }
+
+    100% {
+        width: 93.6px;
+        height: 93.6px;
+        top: 13.2px;
+        left: 37.6px;
+    }
+}
+
+@keyframes breathe {
+    0% {
+        width: 93.6px;
+        height: 93.6px;
+        top: 13.2px;
+        left: 37.6px;
+    }
+
+    25% {
+        width: 91.8px;
+        height: 91.8px;
+        top: 14.1px;
+        left: 38.8px;
+    }
+
+    50% {
+        width: 90px;
+        height: 90px;
+        top: 15px;
+        left: 40px;
+    }
+
+    75% {
+        width: 91.8px;
+        height: 91.8px;
+        top: 14.1px;
+        left: 38.8px;
+    }
+
+    100% {
+        width: 93.6px;
+        height: 93.6px;
+        top: 13.2px;
+        left: 37.6px;
+    }
+}
+
+@-webkit-keyframes bus-breathe {
+    0% {
+        font-size: 41.6px;
+    }
+
+    25% {
+        font-size: 40.8px;
+    }
+
+    50% {
+        font-size: 40px;
+    }
+
+    75% {
+        font-size: 40.8px;
+    }
+
+    100% {
+        font-size: 41.6px;
+    }
+}
+
+@keyframes bus-breathe {
+    0% {
+        font-size: 41.6px;
+    }
+
+    25% {
+        font-size: 40.8px;
+    }
+
+    50% {
+        font-size: 40px;
+    }
+
+    75% {
+        font-size: 40.8px;
+    }
+
+    100% {
+        font-size: 41.6px;
+    }
+}
