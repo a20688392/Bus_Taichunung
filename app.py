@@ -1,4 +1,4 @@
-import crypt
+from flask_bcrypt import Bcrypt
 from hashlib import scrypt
 from flask import Flask, redirect, render_template, request, session, url_for
 from user import user
@@ -21,7 +21,7 @@ def register():
         if user.check_duplicate_username(account):
             return render_template('member.html', check = False)
         password = request.form["password"]
-        bcrypt = crypt()
+        bcrypt = Bcrypt()
         hashed_password = bcrypt.generate_password_hash(password=password)
         user.register(account, hashed_password)
         return redirect(url_for('/'))
