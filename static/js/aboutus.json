@@ -1,0 +1,21 @@
+[
+    {
+        "class": "資工二B",
+        "number": [
+            "4109xxxxx",
+            "4109xxxxx"
+        ],
+        "name": [
+            "蔡侄宇",
+            "呂俊勳"
+        ],
+        "nickname": [
+            "時間不會等人，態度決定人生的高度。",
+            "人生是一連串的選擇題。"
+        ],
+        "img": [
+            "./static/assets/img/jone.png",
+            "./static/assets/img/takoWTF.png"
+        ]
+    }
+]
