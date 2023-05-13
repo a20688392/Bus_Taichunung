@@ -1,0 +1,1251 @@
+[
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG1695",
+        "StopID": "1695",
+        "StopName": {
+            "Zh_tw": "中臺科技大學校區",
+            "En": "C.T.U.S.T. Campus"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 1,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:50:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG2525",
+        "StopID": "2525",
+        "StopName": {
+            "Zh_tw": "中臺科技大學",
+            "En": "Central Taiwan University of Science and Technology"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 2,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:50:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG39",
+        "StopID": "39",
+        "StopName": {
+            "Zh_tw": "樂達利山莊",
+            "En": "Ledali Community"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 3,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:51:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG51",
+        "StopID": "51",
+        "StopName": {
+            "Zh_tw": "大坑橋",
+            "En": "Dakeng Bridge"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 4,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:51:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG53",
+        "StopID": "53",
+        "StopName": {
+            "Zh_tw": "大坑圓環",
+            "En": "Dakeng Traffic Circle"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 5,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:53:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG18298",
+        "StopID": "18298",
+        "StopName": {
+            "Zh_tw": "逢甲橋",
+            "En": "Fengjia Bridge"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 6,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:54:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG73",
+        "StopID": "73",
+        "StopName": {
+            "Zh_tw": "梨仔園",
+            "En": "Liziyuan"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 7,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:55:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG72",
+        "StopID": "72",
+        "StopName": {
+            "Zh_tw": "台電東山所",
+            "En": "Taipower Dongshan Office"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 8,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:55:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG48",
+        "StopID": "48",
+        "StopName": {
+            "Zh_tw": "大坑9號步道",
+            "En": "Dakeng Trail NO.9"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 9,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:56:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG22376",
+        "StopID": "22376",
+        "StopName": {
+            "Zh_tw": "東山松竹路口",
+            "En": "Dongshan-Songzhu Intersection"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 10,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:56:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG47",
+        "StopID": "47",
+        "StopName": {
+            "Zh_tw": "正覺寺",
+            "En": "Zhengjue Temple"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 11,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:57:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG46",
+        "StopID": "46",
+        "StopName": {
+            "Zh_tw": "東山建和路口",
+            "En": "Dongshan-Jianhe Intersection"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 12,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:58:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG45",
+        "StopID": "45",
+        "StopName": {
+            "Zh_tw": "和平里(東山路)",
+            "En": "Heping Village(Dongshan Road)"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 13,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T17:59:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG44",
+        "StopID": "44",
+        "StopName": {
+            "Zh_tw": "軍功里",
+            "En": "Jungong Village"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 14,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:00:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG43",
+        "StopID": "43",
+        "StopName": {
+            "Zh_tw": "建功國小",
+            "En": "Jien Kong Elementary School"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 15,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:01:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG42",
+        "StopID": "42",
+        "StopName": {
+            "Zh_tw": "大華新村",
+            "En": "Dahua Community"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 16,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:02:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG41",
+        "StopID": "41",
+        "StopName": {
+            "Zh_tw": "水景頭",
+            "En": "Shuijingtou"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 17,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:03:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG40",
+        "StopID": "40",
+        "StopName": {
+            "Zh_tw": "三和社區",
+            "En": "Sanhe Community"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 18,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:04:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG57",
+        "StopID": "57",
+        "StopName": {
+            "Zh_tw": "水景里",
+            "En": "Shuijing Village"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 19,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:04:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG50",
+        "StopID": "50",
+        "StopName": {
+            "Zh_tw": "玫瑰新村",
+            "En": "Rose Community"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 20,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:05:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG12477",
+        "StopID": "12477",
+        "StopName": {
+            "Zh_tw": "東山旱溪西路口",
+            "En": "Dongshan-Hanxi W. Intersection"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 21,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:06:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG52",
+        "StopID": "52",
+        "StopName": {
+            "Zh_tw": "東光國小",
+            "En": "Dongguang Elementary School"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 22,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:07:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG70",
+        "StopID": "70",
+        "StopName": {
+            "Zh_tw": "聯安醫院",
+            "En": "Lian-an Hospital"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 23,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:08:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG69",
+        "StopID": "69",
+        "StopName": {
+            "Zh_tw": "大坑口",
+            "En": "Dakengkou"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 24,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:11:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG1046",
+        "StopID": "1046",
+        "StopName": {
+            "Zh_tw": "三光國中",
+            "En": "Sanguang junior high school"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 25,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:11:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG13",
+        "StopID": "13",
+        "StopName": {
+            "Zh_tw": "北屯",
+            "En": "Beitun"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 26,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:12:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG66",
+        "StopID": "66",
+        "StopName": {
+            "Zh_tw": "北屯國小(北屯路)",
+            "En": "Beitun Elementary School(Beitun Road)"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 27,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:13:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG65",
+        "StopID": "65",
+        "StopName": {
+            "Zh_tw": "監理站",
+            "En": "Motor Vehicles Office"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 28,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:15:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG64",
+        "StopID": "64",
+        "StopName": {
+            "Zh_tw": "寶覺寺",
+            "En": "Baojue Temple"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 29,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:16:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG63",
+        "StopID": "63",
+        "StopName": {
+            "Zh_tw": "新民高中(三民路)",
+            "En": "Shin-min Senior High School(Sanmin Road)"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 30,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:17:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG62",
+        "StopID": "62",
+        "StopName": {
+            "Zh_tw": "一心市場",
+            "En": "Yixin Market"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 31,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:17:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "",
+        "StopUID": "TXG61",
+        "StopID": "61",
+        "StopName": {
+            "Zh_tw": "三民錦新街口",
+            "En": "Sanmin-Jinxin Intersection"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "StopSequence": 32,
+        "StopStatus": 1,
+        "NextBusTime": "2022-06-16T18:20:00+08:00",
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG2249",
+        "StopID": "2249",
+        "StopName": {
+            "Zh_tw": "中友百貨",
+            "En": "Chungyo Department Store"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 60,
+        "StopSequence": 33,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:21:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 60,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG59",
+        "StopID": "59",
+        "StopName": {
+            "Zh_tw": "國立臺中科技大學",
+            "En": "National Taichung University of Science and Technology"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 120,
+        "StopSequence": 34,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:22:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 120,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG16296",
+        "StopID": "16296",
+        "StopName": {
+            "Zh_tw": "中興堂",
+            "En": "Chunghsing Hall"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 240,
+        "StopSequence": 35,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:25:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 240,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG58",
+        "StopID": "58",
+        "StopName": {
+            "Zh_tw": "臺中公園(雙十路)",
+            "En": "Taichung Park(Shuangshi Road)"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 360,
+        "StopSequence": 36,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:27:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 360,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG56",
+        "StopID": "56",
+        "StopName": {
+            "Zh_tw": "干城站",
+            "En": "Gancheng Station"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 420,
+        "StopSequence": 37,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:28:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 420,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG10286",
+        "StopID": "10286",
+        "StopName": {
+            "Zh_tw": "臺中車站(成功路口)",
+            "En": "Taichung Station(Chenggong Intersection)"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 480,
+        "StopSequence": 38,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:29:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 480,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG19230",
+        "StopID": "19230",
+        "StopName": {
+            "Zh_tw": "民權繼光街口",
+            "En": "Minquan-Jiguang Intersection"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 720,
+        "StopSequence": 39,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:32:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 720,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG19231",
+        "StopID": "19231",
+        "StopName": {
+            "Zh_tw": "臺中州廳",
+            "En": "Taichung Prefectural Hall"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 780,
+        "StopSequence": 40,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:34:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 780,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG19233",
+        "StopID": "19233",
+        "StopName": {
+            "Zh_tw": "臺中科大民生校區",
+            "En": "NTCUST(Minsheng Campus)"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 900,
+        "StopSequence": 41,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:35:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 900,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG19234",
+        "StopID": "19234",
+        "StopName": {
+            "Zh_tw": "忠孝國小",
+            "En": "Chung-Hsiao Elementary School"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 900,
+        "StopSequence": 42,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:36:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 900,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    },
+    {
+        "PlateNumb": "901-FZ.",
+        "StopUID": "TXG20035",
+        "StopID": "20035",
+        "StopName": {
+            "Zh_tw": "臺中刑務所演武場",
+            "En": "Budokan Martial Arts Hall"
+        },
+        "RouteUID": "TXG1",
+        "RouteID": "1",
+        "RouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "SubRouteUID": "TXG1",
+        "SubRouteID": "1",
+        "SubRouteName": {
+            "Zh_tw": "1",
+            "En": "1"
+        },
+        "Direction": 1,
+        "EstimateTime": 1020,
+        "StopSequence": 43,
+        "StopStatus": 0,
+        "NextBusTime": "2022-06-16T18:38:00+08:00",
+        "Estimates": [
+            {
+                "PlateNumb": "901-FZ.",
+                "EstimateTime": 1020,
+                "IsLastBus": false
+            }
+        ],
+        "SrcUpdateTime": "2022-06-16T17:38:39+08:00",
+        "UpdateTime": "2022-06-16T17:40:11+08:00"
+    }
+]

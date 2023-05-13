@@ -1,0 +1,286 @@
+.bus-all {
+    width: 100%;
+}
+
+.left {
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+    float: left;
+    text-align: center;
+}
+
+.right {
+    width: 80%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    float: right;
+    padding-top: 0rem !important;
+    padding: 2rem;
+}
+
+.right-info {
+    width: 80%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    float: right;
+    padding-top: 0rem !important;
+    padding: 2rem;
+}
+
+.left-row {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.left-text {
+    font-size: 4px !important;
+}
+
+.left-button {
+    background-color: #C4C4C4;
+    /* width: 100%; */
+    /* height: 30%; */
+    padding: 0.2rem;
+}
+
+.left-div {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    /* margin-left: 0.6rem; */
+    /* margin-right: 0.6rem; */
+    height: 4vh;
+}
+
+.left-submit {
+    /* background-image: url(../img/submit.png); */
+    width: auto;
+    border-radius: 20% !important;
+
+}
+
+.right-top {
+    width: auto;
+    height: 12vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid #000000;
+
+}
+
+.bg {
+    margin: 10px;
+}
+
+.bg-buttom {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+/* 站名、進站狀態 */
+.bus-state {
+    position: relative;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.station {
+    /* position: relative; */
+    top: 15px;
+    left: 40px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #43afd6;
+    z-index: 1;
+}
+
+.station .time {
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    line-height: 90px;
+}
+
+.way {
+    position: absolute;
+    top: 0px;
+    /* left: 77px; */
+    height: 120px;
+    width: 16px;
+    background-color: #43afd6;
+}
+
+.arrive {
+    /* position: relative; */
+    top: 10px;
+    left: 40px;
+    background-color: #ff6400;
+    z-index: 5;
+    -webkit-animation: breathe 2s infinite;
+    animation: breathe 2s infinite;
+}
+
+.over {
+    background-color: #0ba32c;
+}
+
+.stop {
+    background-color: #e60000;
+}
+
+.sta-name {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    font-weight: 900;
+    font-size: 21.6px;
+}
+
+.bus {
+    position: absolute;
+    /* top: 50px; */
+    right: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+.bus .fa {
+    -webkit-animation: bus-breathe 2s infinite;
+    animation: bus-breathe 2s infinite;
+    font-size: 40px;
+    color: #ff6400;
+}
+
+.bus span {
+    margin-left: 10px;
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+#bus-way-list {
+    width: auto;
+    margin: 0 auto 30px auto;
+    font-size: 18px;
+    /* padding-top: 300px; */
+    z-index: -1;
+}
+
+.testright {
+    /* position: relative; */
+    overflow-y: auto;
+    /* max-height: 400px; */
+    min-height: 6em;
+    padding-top: 0rem !important;
+    padding: 2rem;
+}
+
+@media screen and (max-width:1200px) {
+    .left {
+        background-color: #e60000;
+        display: none;
+    }
+
+    .left-div {
+        display: none;
+    }
+
+    .right-info {
+        width: auto;
+    }
+
+    .bg-buttom {
+        width: auto;
+    }
+
+    /* .back-buttom,.go-buttom{
+        width: auto;
+    } */
+    /* .back-buttom {
+        width: auto;
+    } */
+    .right-info {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 0rem;
+        /* padding-top: 0rem; */
+        width: 100%;
+        ;
+    }
+
+    /* .station,.way,.sta-name {
+        position: absolute;
+        left: 77px;
+    } */
+    .way {
+        left: 77px;
+    }
+
+    .station {
+        position: absolute;
+    }
+
+    
+}
+
+@media screen and (max-width:472px) {
+    .bus{
+        top:0px;
+    }
+}
+#fav {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.fav-item {
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    background-color: #fff;
+    margin-top: 1vh;
+    border-radius: 10px;
+    color: #444;
+    font-weight: 900;
+    width: 100%;
+    height: 4rem;
+}
+
+.item-num {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+.item-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-color: #C4C4C4;
+    border-radius: 0px 10px 10px 0px;
+}

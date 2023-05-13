@@ -1,0 +1,38 @@
+{% extends "top.html" %}
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="./static/css/w2.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/element.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/bus-way.css">
+    <link rel="stylesheet" href="./static/css/font-awesome.css" />
+    <link rel="stylesheet" href="./static/css/breathe.css" />
+{% endblock %}
+{% block title %} 公車動態網頁 {% endblock %}
+{% block content %}
+    <div class="top sticky-top">
+        <header >
+            <div class="topper"></div>
+            <div class="right-info">
+                <div class="right-top  bus_num center">
+                    <p id="go"></p>
+                </div>
+                <div class="bg-buttom">
+                    <button id="gobtn" type="button" class="bg col go-buttom btn btn-success"></button>
+                    <button id="backbtn" type="button" class="bg col back-buttom btn btn-outline-success"></button>
+                </div>
+            </div>
+            <div class="left expand-lg">
+                <div class="left-row">
+                    <img src="./static/assets/img/favourite.png" class="left-submit left-div">
+                    <div class="center input-group mb-3 left-button">
+                        <input type="text" id="searchchange" class="form-control  left-div left-text" placeholder="查詢之公車路線">
+                        <img src="./static/assets/img/submit.png" id="change" class="col-4 left-submit left-div">
+                    </div>
+                </div>
+                <div id="fav"></div>
+            </div>
+            </div>
+        </header>
+    </div>
+    <ul id="bus-way-list" class="testright"></ul>
+    <script src="./static/js/way.js"></script>
+{% endblock %}

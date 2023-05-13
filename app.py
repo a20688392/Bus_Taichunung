@@ -68,6 +68,10 @@ def aboutus():
 def QandA():
     return render_template('QandA.html')
 
+@app.route('/busWay')
+def bus():
+    return render_template('busWay.html',Zh_tw=1,En=1)
+
 if __name__ == '__main__':
     # 設定 JWT 密鑰
     app.config['JWT_SECRET_KEY'] = '12389!)!834913*&*&*&*'
