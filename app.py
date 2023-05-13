@@ -60,6 +60,10 @@ def getsession():
 def aboutus():
     return render_template('aboutus.html')
 
+@app.route('/QandA')
+def QandA():
+    return render_template('QandA.html')
+
 if __name__ == '__main__':
     # 設定 JWT 密鑰
     app.config['JWT_SECRET_KEY'] = '12389!)!834913*&*&*&*'

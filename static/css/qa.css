@@ -1,0 +1,13 @@
+.QA{
+    margin: 5rem;
+    margin-top: 1rem!important;
+}
+.Q{
+    background-color: rgb(99, 182, 255);
+    font-weight: 900;
+}
+
+.A{
+    font-weight: 900;
+    word-wrap: break-word;
+}
