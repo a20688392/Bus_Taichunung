@@ -21,13 +21,13 @@ def register():
     if request.method == 'POST':
         account = request.form["account"]
         if user.check_duplicate_username(account):
-            return render_template('member.html', check = False)
+            return render_template('register.html', check = False)
         password = request.form["password"]
         bcrypt = Bcrypt()
         hashed_password = bcrypt.generate_password_hash(password=password)
         user.register(account, hashed_password)
         return redirect(url_for('/'))
-    return render_template('member.html')
+    return render_template('register.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():

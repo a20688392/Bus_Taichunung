@@ -32,7 +32,7 @@ $(document).ready(function () {
                     phone: $("#inputPhone").val(),
                     email: $("#inputEmail").val(),
                 },
-                url: "/member",
+                url: "/register",
             };
 
             axios(options)
