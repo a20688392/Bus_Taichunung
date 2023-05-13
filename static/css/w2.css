@@ -1,0 +1,103 @@
+.top-right {
+    flex: auto;
+    float: right;
+}
+
+.card:hover {
+    background-color: #b3ffe2;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-color {
+    background: linear-gradient(180deg, #000000 0%, rgba(48, 48, 48, 0.8) 99.98%, rgba(170, 170, 170, 0.6) 99.99%);
+}
+
+
+.middle {
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 5vh;
+    /* padding-bottom: 20vh; */
+    padding-right: 12rem;
+    padding-left: 12rem;
+}
+
+.middle-button {
+    background-color: #C4C4C4;
+    /* width: 100%; */
+    /* height: 30%; */
+    padding: 10px;
+}
+
+.middle-div {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    height: 10vh;
+}
+
+.middle-submit {
+    /* background-image: url(../img/submit.png); */
+    width: auto;
+    border-radius: 10% !important;
+
+}
+
+.bg-color {
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 13vh;
+}
+
+.all {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.bus_way {
+    color: #777;
+    font-size: 24px;
+}
+
+.bus_num {
+    color: #444;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.article-color:hover {
+    background-color: #bbbbbb;
+    border-color: #bbbbbb;
+}
+
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.article-title {
+    margin: 1rem;
+    margin-top: 0;
+}
+
+@media screen and (max-width:830px) {
+    .middle-submit {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .middle {
+        padding-right: 12vh;
+        padding-left: 12vh;
+    }
+}

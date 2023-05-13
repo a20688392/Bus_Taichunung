@@ -1,0 +1,44 @@
+a {
+    text-decoration: none
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin: 0.5rem;
+}
+
+.header{
+    position: sticky;
+    /* z-index: 10; */
+    top: 0;
+    width: 800px;
+    background-color: #f1ebeb;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.background-img {
+    background-image: url("../assets/img/2unknown.png");
+    background-size: cover;
+
+    height: 100px;
+    padding: 0;
+}
+
+.bottom {
+    background-color: #C4C4C4;
+    width: 100%;
+    height: 20vh;
+}
+.headimg {
+    height: 40vh;
+}

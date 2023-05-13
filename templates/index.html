@@ -1,0 +1,24 @@
+
+<body>
+{% extends "top.html" %}
+{% block title %} 這是全部 {% endblock %}
+{% block content %}
+<div>
+    <div class="center bg-color fs-2 fw-bold">
+        台中市公車動態資訊
+    </div>
+    <p class="center fs-2 fw-bold">請輸入路線編號</p>
+    <div class="middle">
+
+        <div class="center input-group mb-3 middle-button">
+            <input type="text" class="form-control middle-div fs-2 search" placeholder="請輸入欲查詢之公車路線">
+            <!-- <button type="button" class="input-group-text col-4"><img class="middle-submit" src="../img/submit.png"></button> -->
+            <img src="../static/assets/img/submit.png" class="middle-submit middle-div">
+        </div>
+    </div>
+    <ul id="list">
+
+    </ul>
+</div>
+<script src="./static/js/app.js"></script>
+{% endblock %}
