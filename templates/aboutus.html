@@ -8,7 +8,15 @@
     <div class="center bg-color fs-2 fw-bold">
         關於我們
     </div>
-    <ul id="aboutus"></ul>
-    <div class="down"></div>
-    <script src="./static/js/aboutus.js"></script>
+    <ul id="aboutus">
+        {% for author in authors %}
+            <li class="card" title="個人資料">
+                <img class="headimg" src="{{author[5]}}">
+                <p>{{author[1]}}</p>
+                <p>{{author[2]}}</p>
+                <p>{{author[3]}}</p>
+                <p>{{author[4]}}</p>
+            </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
