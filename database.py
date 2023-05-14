@@ -47,6 +47,20 @@ conn.execute("insert into user (name, account, password, phoneNumber, email)\
 conn.execute("insert into user (name, account, password, phoneNumber, email)\
             values('UserMate2','s1091849', 'password', '0912-235-111' , 'UserMate2@gmail.com')")
 
+conn.execute("insert into QA (question, answer)\
+            values('如何使用' , '將您要搜尋的目標路線號碼輸入於主頁中的搜尋攔')")
+
+conn.execute("insert into QA (question, answer)\
+            values('查詢路線' , '將欲想搜尋的路線輸入後下方會出現搜尋結果，點擊進入後即可查詢路線')")
+
+conn.execute("insert into QA (question, answer)\
+            values('來源資料' , 'https://opendata.taichung.gov.tw')")
+
+conn.execute("insert into QA (question, answer)\
+            values('公車不準時/等不到公車' , '請撥打市民服務專線或是相關公司電話回報')")
+
+conn.execute("insert into QA (question, answer)\
+            values('公司機過站不停/態度不佳' , '請撥打市民服務專線或是相關公司電話回報')")
 # result = conn.execute("select * from user")
 # for row in result:
 #     print("{}, {}, {}".format(row[0], row[1], row[2]))
