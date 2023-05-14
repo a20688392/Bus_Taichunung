@@ -1,8 +1,9 @@
+import json
 import os
 from flask.testing import FlaskClient
 from flask_bcrypt import Bcrypt
 from hashlib import scrypt
-from flask import Flask, redirect, render_template, request, session, url_for
+from flask import Flask, jsonify, redirect, render_template, request, session, url_for
 from user import user
 from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
 
@@ -15,11 +16,6 @@ app.secret_key = os.urandom(24)
 
 @app.route('/')
 def index():
-    if 'access_token' in session:
-        res =  client.post(url_for('checkjwt'), headers={
-            'Authorization': 'Bearer ' + session['access_token']
-        })
-        print(res);
     return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -57,9 +53,7 @@ def login():
 def checkjwt():
     account = get_jwt_identity()
     userdata = user.getUserData(account);
-    print("comeing to checkjwt :" , account)
-    print("comeing to checkjwt :" , userdata)
-    return render_template('index.html' , userdata = userdata)
+    return jsonify({'userdata': userdata[1]})
 
 @app.route('/getsession')
 def getsession():
