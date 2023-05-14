@@ -71,7 +71,7 @@ conn.execute("insert into author (class, name, studentNumber, nickename, img)\
             values('資工三B', '楊廷烽' , '410919158', '喜歡就是喜歡沒有理由，只有不喜歡才有理由', './static/assets/img/andy.png')")
 
 conn.execute("insert into author (class, name, studentNumber, nickename, img)\
-            values('資工三A', '高執益' , '410918495', '學無止境', './static/assets/img/monkey.png')")
+            values('資工三A', '高執益' , '410918495', '學無止境', './static/assets/img/monkey.jpg')")
 # result = conn.execute("select * from user")
 # for row in result:
 #     print("{}, {}, {}".format(row[0], row[1], row[2]))
