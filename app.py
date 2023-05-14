@@ -3,6 +3,7 @@ from flask_bcrypt import Bcrypt
 from hashlib import scrypt
 from flask import Flask, redirect, render_template, request, session, url_for
 from user import user
+from QA import QA
 
 from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
  
@@ -66,7 +67,8 @@ def aboutus():
 
 @app.route('/QandA')
 def QandA():
-    return render_template('QandA.html')
+    QAs = QA.getAll()
+    return render_template('QandA.html', QAs = QAs)
 
 @app.route('/busWay')
 def bus():

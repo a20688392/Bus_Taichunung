@@ -5,8 +5,12 @@
 {% endblock %}
 {% block title %} Q&A {% endblock %}
 {% block content %}
-    <div class="top"></div>
-    <div class="QA"></div>
-    <div class="down"></div>
-    <script src="./static/js/qa.js"></script>
+    <div class="QA">
+        {% for QA in QAs %}
+            <div class="qa" title="Q&A">
+                <p class="Q">Q: {{QA[1]}}</p>
+                <p class="A">A: {{QA[2]}}</p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
