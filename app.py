@@ -1,5 +1,6 @@
 import json
 import os
+from urllib import response
 from flask.testing import FlaskClient
 from flask_bcrypt import Bcrypt
 from hashlib import scrypt
@@ -50,18 +51,27 @@ def login():
             return redirect(url_for('index'))
     return render_template('login.html')
 
+@app.route('/logout')
+def logout():
+    session.pop('access_token',None)
+    return render_template('index.html')
+
 @app.route('/checkjwt', methods=['POST'])
 @jwt_required()
 def checkjwt():
     account = get_jwt_identity()
     userdata = user.getUserData(account);
-    return jsonify({'userdata': userdata[1]})
+    return jsonify({'userdata': userdata})
 
-@app.route('/getsession')
-def getsession():
+@app.route('/userpage')
+def userpage():
     if 'access_token' in session:
-        return session['access_token']
-    return "Not logged in!"
+        response =  client.post(url_for('checkjwt'), headers={
+            'Authorization': 'Bearer ' + session['access_token']
+        })
+        userdata = json.loads(response.get_data())['userdata']
+        print(userdata);
+    return render_template('userpage.html', userdata = userdata)
 
 @app.route('/aboutus')
 def aboutus():

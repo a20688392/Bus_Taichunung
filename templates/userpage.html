@@ -1,0 +1,14 @@
+{% extends "top.html" %} {% block style %}
+<link rel="stylesheet" type="text/css" href="./static/css/element.css" />
+<link rel="stylesheet" type="text/css" href="./static/css/qa.css" />
+{% endblock %} {% block title %} Q&A {% endblock %} {% block content %}
+<div class="QA">
+  <div class="qa" title="Q&A">
+    <p class="Q">會員資訊</p>
+    <p class="A">帳號: {{ userdata[2] }}</p>
+    <p class="A">名稱: {{ userdata[1] }}</p>
+    <p class="A">電話: {{ userdata[5] }}</p>
+    <p class="A">電子郵件: {{ userdata[6] }}</p>
+  </div>
+</div>
+{% endblock %}

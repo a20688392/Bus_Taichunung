@@ -59,12 +59,24 @@
               axios.post('{{ url_for("checkjwt") }}').then(function (response) {
                 console.log(response.data);
                 document.getElementById("loginLink").innerHTML =
-                  response.data.userdata;
+                  response.data.userdata[1];
+                document.getElementById("logoutLink").innerHTML = "登出";
                 // 在這裡可以處理 response 回傳的資料
               });
             </script>
             <li class="nav-item">
-              <p class="nav-link" id="loginLink"></p>
+              <a
+                class="nav-link"
+                id="loginLink"
+                href="{{ url_for('userpage')}}"
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="logoutLink"
+                href="{{ url_for('logout')}}"
+              ></a>
             </li>
             {% else %}
             <li class="nav-item">

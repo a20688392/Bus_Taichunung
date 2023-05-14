@@ -9,4 +9,3 @@ class QA:
         result = conn.execute("select * from QA")
         conn.commit()
         return result
-
