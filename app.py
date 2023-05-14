@@ -11,8 +11,6 @@ from author import author
 
 from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
 
-
-
 jwt = JWTManager()
  
 app = Flask(__name__)
@@ -34,8 +32,8 @@ def register():
         email = request.form["email"]
         bcrypt = Bcrypt()
         hashed_password = bcrypt.generate_password_hash(password=password)
-        user.register(name,account, hashed_password,phone,email)
-        return redirect("/")
+        user.register(name,account, hashed_password.decode("utf-8"),phone,email)
+        return redirect(url_for('index'))
     return render_template('register.html')
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -71,7 +69,6 @@ def userpage():
             'Authorization': 'Bearer ' + session['access_token']
         })
         userdata = json.loads(response.get_data())['userdata']
-        print(userdata);
     return render_template('userpage.html', userdata = userdata)
 
 @app.route('/aboutus')
@@ -87,6 +84,12 @@ def QandA():
 @app.route('/busWay')
 def bus():
     return render_template('busWay.html',Zh_tw=1,En=1)
+
+@app.route('/getsession')
+def getsession():
+    if 'access_token' in session:
+        return session['access_token']
+    return "Not logged in!"
 
 if __name__ == '__main__':
     # 設定 JWT 密鑰

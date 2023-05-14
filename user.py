@@ -22,7 +22,6 @@ class user:
         cursor.execute(sql, values)
         result = cursor.fetchone()[0]
         conn.commit()
-        print("success: " , result)
         return bool(result)
     
     @staticmethod
@@ -44,5 +43,6 @@ class user:
         values = [account]
         cursor.execute(sql, values)
         result = cursor.fetchone()
+        print("??????:? " , result)
         conn.commit()
         return result
