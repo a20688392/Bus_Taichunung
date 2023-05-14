@@ -1,4 +1,5 @@
 import os
+from flask.testing import FlaskClient
 from flask_bcrypt import Bcrypt
 from hashlib import scrypt
 from flask import Flask, redirect, render_template, request, session, url_for
@@ -6,7 +7,9 @@ from user import user
 from QA import QA
 
 from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
- 
+
+
+
 jwt = JWTManager()
  
 app = Flask(__name__)
@@ -15,7 +18,10 @@ app.secret_key = os.urandom(24)
 @app.route('/')
 def index():
     if 'access_token' in session:
-        return redirect(url_for('/getsession'))
+        res =  client.post(url_for('checkjwt'), headers={
+            'Authorization': 'Bearer ' + session['access_token']
+        })
+        print(res);
     return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -45,14 +51,16 @@ def login():
         if check == True:
             access_token = create_access_token(identity=account)
             session['access_token'] = access_token
-            return render_template('login.html')
+            return redirect(url_for('index'))
     return render_template('login.html')
 
-@app.route('/checkjwt')
-@jwt_required
+@app.route('/checkjwt', methods=['POST'])
+@jwt_required()
 def checkjwt():
-    name = get_jwt_identity()
-    userdata = user.getUserData(name);
+    account = get_jwt_identity()
+    userdata = user.getUserData(account);
+    print("comeing to checkjwt :" , account)
+    print("comeing to checkjwt :" , userdata)
     return render_template('index.html' , userdata = userdata)
 
 @app.route('/getsession')
@@ -76,6 +84,7 @@ def bus():
 
 if __name__ == '__main__':
     # 設定 JWT 密鑰
+    client = FlaskClient(app, response_wrapper=app.response_class)
     app.config['JWT_SECRET_KEY'] = '12389!)!834913*&*&*&*'
     jwt.init_app(app)
     from database import *
