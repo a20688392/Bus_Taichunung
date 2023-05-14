@@ -15,9 +15,11 @@ conn.execute('''
 conn.execute('''
     CREATE TABLE author (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        class varchar(42) NOT NULL,
         name varchar(42) NOT NULL,
         studentNumber varchar(42) NOT NULL,
-        email varchar(255) NOT NULL
+        nickename varchar(42) NOT NULL,
+        img varchar(255) NOT NULL
     );
 ''')
 conn.execute('''
@@ -61,6 +63,15 @@ conn.execute("insert into QA (question, answer)\
 
 conn.execute("insert into QA (question, answer)\
             values('公司機過站不停/態度不佳' , '請撥打市民服務專線或是相關公司電話回報')")
+
+conn.execute("insert into author (class, name, studentNumber, nickename, img)\
+            values('資工三B', '蔡侄宇' , '410918819', '時間不會等人，態度決定人生的高度。', './static/assets/img/jone.png')")
+
+conn.execute("insert into author (class, name, studentNumber, nickename, img)\
+            values('資工三B', '楊廷烽' , '410919158', '喜歡就是喜歡沒有理由，只有不喜歡才有理由', './static/assets/img/andy.png')")
+
+conn.execute("insert into author (class, name, studentNumber, nickename, img)\
+            values('資工三A', '高執益' , '410918495', '學無止境', './static/assets/img/monkey.png')")
 # result = conn.execute("select * from user")
 # for row in result:
 #     print("{}, {}, {}".format(row[0], row[1], row[2]))
