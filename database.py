@@ -1,4 +1,5 @@
 import sqlite3
+import json
 
 conn = sqlite3.connect('user.sqlite')
 
@@ -37,6 +38,15 @@ conn.execute('''
         answer varchar(255) NOT NULL
     );
 ''')
+
+conn.execute('''
+    CREATE TABLE bus (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        busName varchar(255) NOT NULL,
+        busNumber varchar(255) NOT NULL
+    );
+''')
+
 conn.execute("insert into user (name, account, password, phoneNumber, email)\
             values('Jone','s1091881', '$2b$12$k/tLuYSd3aZTUkJX62A7YO0d3I.fiYdU6/gLCxUH2O0o/P2zmr0ZG', '0912-345-678' , 'Jone@gmail.com')")
 
@@ -76,4 +86,18 @@ conn.execute("insert into author (class, name, studentNumber, nickename, img)\
 # for row in result:
 #     print("{}, {}, {}".format(row[0], row[1], row[2]))
 
+input_file = open ('./static/js/data.json',"r",encoding="utf-8")
+json_array = json.load(input_file)
+
+for item in json_array:
+    busNumber = item['SubRoutes'][0]['SubRouteName']['Zh_tw']
+    busName = item['SubRoutes'][0]['Headsign']
+
+    sql = "insert into bus (busName, busNumber) values(?, ?)"
+    values = [busName, busNumber]
+    conn.execute(sql, values)
+
+# result = conn.execute("select * from bus ")
+# for row in result:
+#     print("{}, {}, {}".format(row[0], row[1], row[2]))
 conn.commit()
