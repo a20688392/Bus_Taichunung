@@ -8,11 +8,12 @@ from flask import Flask, jsonify, redirect, render_template, request, session, u
 from user import user
 from QA import QA
 from author import author
+from myFavorite import myFavorite
 
 from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
 
 jwt = JWTManager()
- 
+
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
@@ -22,7 +23,7 @@ def index():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    if request.method == 'POST': 
+    if request.method == 'POST':
         name = request.form["name"]
         if user.check_duplicate_username(name):
             return render_template('register.html', check = False)
@@ -59,13 +60,13 @@ def logout():
 @jwt_required()
 def checkjwt():
     account = get_jwt_identity()
-    userdata = user.getUserData(account);
+    userdata = user.getUserData(account)
     return jsonify({'userdata': userdata})
 
 @app.route('/userpage')
 def userpage():
     if 'access_token' in session:
-        response =  client.post(url_for('checkjwt'), headers={
+        response =  client.post(url_for('checkjwt'),headers={
             'Authorization': 'Bearer ' + session['access_token']
         })
         userdata = json.loads(response.get_data())['userdata']
@@ -90,6 +91,47 @@ def getsession():
     if 'access_token' in session:
         return session['access_token']
     return "Not logged in!"
+
+@app.route('/api/savefavorite', methods=['POST'])
+def saveFavorite():
+    if 'access_token' not in session:
+        error = {
+            "message": "請先登入或重新登入",
+        }
+        return error
+    response =  client.post(url_for('checkjwt'),headers={
+            'Authorization': 'Bearer ' + session['access_token']
+        })
+    userdata = json.loads(response.get_data())['userdata']
+    busNumber = request.form["busNumber"]
+    if myFavorite.check_exists(busNumber):
+        error = {
+            "message": "查無此公車",
+        }
+        return error
+    if myFavorite.check_favorite(busNumber, userdata[0]):
+        error = {
+            "message": "已加進最愛站牌",
+        }
+        return error
+    myFavorite.saveFavorite(busNumber, userdata[0])
+    success = {
+        "message": "新增成功",
+    }
+    return success
+
+@app.route('/api/getfavorite')
+def getFavorite():
+    if 'access_token' in session:
+        data = []
+        response =  client.post(url_for('checkjwt'),headers={
+                'Authorization': 'Bearer ' + session['access_token']
+            })
+        userdata = json.loads(response.get_data())['userdata']
+        data = myFavorite.getFavorite(userdata[0])
+
+        return data
+    return []
 
 if __name__ == '__main__':
     # 設定 JWT 密鑰
