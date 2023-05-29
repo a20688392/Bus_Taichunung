@@ -39,76 +39,57 @@ $(document).ready(
 );
 
 function myfav() {
+    getFavorite()
+    $("#change").click(function () {
+        $.ajax({
+            url: "../../api/savefavorite",
+            method: 'POST',
+            data: {
+                busNumber: $("#searchchange").val()
+            },
+            async: false,
+
+            success: function (res) {
+                alert(res.message)
+                getFavorite()
+            }
+        })
+    })
+}
+
+function getFavorite() {
     $.ajax({
-        // url: dataUrl,
-        url: "./static/js/data.json",
         method: 'GET',
-        dataType: 'json',
-        data: '',
+        url: "../../api/getfavorite",
         async: true,
 
-        success: function (data) {
-            var time = 0;//只能最愛五筆
-            for (var i = 0; i < data.length; i++) {
+        success: function (res) {
+            $("#fav").empty();
+            for (var i = 0; i < res.length; i++) {
                 let fav = $("<button>");
                 fav.addClass("fav-item");
-                fav.attr("style", "display:none");
-                fav.attr("id", data[i].SubRoutes[0].SubRouteName.Zh_tw);
+                fav.attr("id", res[i][0]);
                 let items = $("<div>");
                 items.addClass("item");
                 let num = $("<div>");
                 num.addClass("item-num");
                 let text = $("<div>");
                 text.addClass("item-text");
-                text.html(data[i].SubRoutes[0].Headsign);
-                num.html(data[i].SubRoutes[0].SubRouteName.Zh_tw);
+                text.html(res[i][1]);
+                num.html(res[i][0]);
                 fav.append(num, text);
                 $("#fav").append(fav);
                 $("#searchchange").val("");
             }
             $(".fav-item").click(function () {
                 var id = $(this).attr("id");
-                console.log(id);
                 $("#go").empty();
                 $("#go").html(id + ' 號公車路線');
                 roadLine = id;
                 checkWay();
-                console.log(roadLine);
-
-            });
-
-            $("#change").click(function () {
-                let check = 0;
-                if (time < 5) {
-
-                    for (var i = 0; i < data.length; i++) {
-
-                        if (data[i].SubRoutes[0].SubRouteName.Zh_tw == $("#searchchange").val()) {
-                            let value = $("#searchchange").val();
-                            if ($("#" + value).attr("style") == 'display:none') {
-                                console.log($("#" + value).attr("style"));
-                                check = 1;
-                                time++;
-                                $("#" + value).attr("style", "");
-                                $("#searchchange").val("");
-                            } else {
-                                check = 2;
-                            }
-                        }
-                    }
-                    if (check == 0) {
-                        alert("查不到");
-                        $("#searchchange").val("");
-                    } else if (check == 2) {
-                        alert("已加進最愛站牌!!");
-                        $("#searchchange").val("");
-                    }
-                } else {
-                    alert("只能五筆最愛");
-                }
             });
         }
-    });
+    })
 }
 
 var roadLine = $.getUrlParam('Zh_tw');
